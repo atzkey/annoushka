@@ -1,0 +1,1342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Random bits does the backprop, too 1`] = `
+Array [
+  MSE {
+    "diff": Array [
+      Array [
+        -0.9999832985781519,
+      ],
+      Array [
+        -1.9999832985781518,
+      ],
+    ],
+    "gradients": Object {
+      "Sigmoid": Array [
+        Array [
+          -0.9999832985781519,
+        ],
+        Array [
+          -1.9999832985781518,
+        ],
+      ],
+      "Training": Array [
+        Array [
+          0.9999832985781519,
+        ],
+        Array [
+          1.9999832985781518,
+        ],
+      ],
+    },
+    "inbound": Array [
+      Input {
+        "gradients": Object {
+          "Training": Array [
+            Array [
+              0.9999832985781519,
+            ],
+            Array [
+              1.9999832985781518,
+            ],
+          ],
+        },
+        "inbound": Array [],
+        "name": "Training",
+        "outbound": Array [
+          [Circular],
+        ],
+        "value": Array [
+          1,
+          2,
+        ],
+      },
+      Sigmoid {
+        "gradients": Object {
+          "Linear": Array [
+            Array [
+              -0.000016700863977770338,
+            ],
+            Array [
+              -0.00003340200688837377,
+            ],
+          ],
+        },
+        "inbound": Array [
+          Linear {
+            "gradients": Object {
+              "Bias": Array [
+                -0.00005010287086614411,
+              ],
+              "Ins": Array [
+                Array [
+                  -0.000033401727955540676,
+                  -0.00005010259193331102,
+                ],
+                Array [
+                  -0.00006680401377674754,
+                  -0.00010020602066512132,
+                ],
+              ],
+              "Weights": Array [
+                Array [
+                  0.00005010287086614411,
+                ],
+                Array [
+                  0.00010020574173228821,
+                ],
+              ],
+            },
+            "inbound": Array [
+              Input {
+                "gradients": Object {
+                  "Ins": Array [
+                    Array [
+                      -0.000033401727955540676,
+                      -0.00005010259193331102,
+                    ],
+                    Array [
+                      -0.00006680401377674754,
+                      -0.00010020602066512132,
+                    ],
+                  ],
+                },
+                "inbound": Array [],
+                "name": "Ins",
+                "outbound": Array [
+                  [Circular],
+                ],
+                "value": Array [
+                  Array [
+                    -1,
+                    -2,
+                  ],
+                  Array [
+                    -1,
+                    -2,
+                  ],
+                ],
+              },
+              Input {
+                "gradients": Object {
+                  "Weights": Array [
+                    Array [
+                      0.00005010287086614411,
+                    ],
+                    Array [
+                      0.00010020574173228821,
+                    ],
+                  ],
+                },
+                "inbound": Array [],
+                "name": "Weights",
+                "outbound": Array [
+                  [Circular],
+                ],
+                "value": Array [
+                  Array [
+                    2,
+                  ],
+                  Array [
+                    3,
+                  ],
+                ],
+              },
+              Input {
+                "gradients": Object {
+                  "Bias": Array [
+                    -0.00005010287086614411,
+                  ],
+                },
+                "inbound": Array [],
+                "name": "Bias",
+                "outbound": Array [
+                  [Circular],
+                ],
+                "value": Array [
+                  -3,
+                ],
+              },
+            ],
+            "name": "Linear",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              Array [
+                -11,
+              ],
+              Array [
+                -11,
+              ],
+            ],
+          },
+        ],
+        "name": "Sigmoid",
+        "outbound": Array [
+          [Circular],
+        ],
+        "value": Array [
+          Array [
+            0.00001670142184809518,
+          ],
+          Array [
+            0.00001670142184809518,
+          ],
+        ],
+      },
+    ],
+    "m": 2,
+    "name": "Cost",
+    "outbound": Array [],
+    "value": 2.4999498960133932,
+  },
+  Sigmoid {
+    "gradients": Object {
+      "Linear": Array [
+        Array [
+          -0.000016700863977770338,
+        ],
+        Array [
+          -0.00003340200688837377,
+        ],
+      ],
+    },
+    "inbound": Array [
+      Linear {
+        "gradients": Object {
+          "Bias": Array [
+            -0.00005010287086614411,
+          ],
+          "Ins": Array [
+            Array [
+              -0.000033401727955540676,
+              -0.00005010259193331102,
+            ],
+            Array [
+              -0.00006680401377674754,
+              -0.00010020602066512132,
+            ],
+          ],
+          "Weights": Array [
+            Array [
+              0.00005010287086614411,
+            ],
+            Array [
+              0.00010020574173228821,
+            ],
+          ],
+        },
+        "inbound": Array [
+          Input {
+            "gradients": Object {
+              "Ins": Array [
+                Array [
+                  -0.000033401727955540676,
+                  -0.00005010259193331102,
+                ],
+                Array [
+                  -0.00006680401377674754,
+                  -0.00010020602066512132,
+                ],
+              ],
+            },
+            "inbound": Array [],
+            "name": "Ins",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              Array [
+                -1,
+                -2,
+              ],
+              Array [
+                -1,
+                -2,
+              ],
+            ],
+          },
+          Input {
+            "gradients": Object {
+              "Weights": Array [
+                Array [
+                  0.00005010287086614411,
+                ],
+                Array [
+                  0.00010020574173228821,
+                ],
+              ],
+            },
+            "inbound": Array [],
+            "name": "Weights",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              Array [
+                2,
+              ],
+              Array [
+                3,
+              ],
+            ],
+          },
+          Input {
+            "gradients": Object {
+              "Bias": Array [
+                -0.00005010287086614411,
+              ],
+            },
+            "inbound": Array [],
+            "name": "Bias",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              -3,
+            ],
+          },
+        ],
+        "name": "Linear",
+        "outbound": Array [
+          [Circular],
+        ],
+        "value": Array [
+          Array [
+            -11,
+          ],
+          Array [
+            -11,
+          ],
+        ],
+      },
+    ],
+    "name": "Sigmoid",
+    "outbound": Array [
+      MSE {
+        "diff": Array [
+          Array [
+            -0.9999832985781519,
+          ],
+          Array [
+            -1.9999832985781518,
+          ],
+        ],
+        "gradients": Object {
+          "Sigmoid": Array [
+            Array [
+              -0.9999832985781519,
+            ],
+            Array [
+              -1.9999832985781518,
+            ],
+          ],
+          "Training": Array [
+            Array [
+              0.9999832985781519,
+            ],
+            Array [
+              1.9999832985781518,
+            ],
+          ],
+        },
+        "inbound": Array [
+          Input {
+            "gradients": Object {
+              "Training": Array [
+                Array [
+                  0.9999832985781519,
+                ],
+                Array [
+                  1.9999832985781518,
+                ],
+              ],
+            },
+            "inbound": Array [],
+            "name": "Training",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              1,
+              2,
+            ],
+          },
+          [Circular],
+        ],
+        "m": 2,
+        "name": "Cost",
+        "outbound": Array [],
+        "value": 2.4999498960133932,
+      },
+    ],
+    "value": Array [
+      Array [
+        0.00001670142184809518,
+      ],
+      Array [
+        0.00001670142184809518,
+      ],
+    ],
+  },
+  Linear {
+    "gradients": Object {
+      "Bias": Array [
+        -0.00005010287086614411,
+      ],
+      "Ins": Array [
+        Array [
+          -0.000033401727955540676,
+          -0.00005010259193331102,
+        ],
+        Array [
+          -0.00006680401377674754,
+          -0.00010020602066512132,
+        ],
+      ],
+      "Weights": Array [
+        Array [
+          0.00005010287086614411,
+        ],
+        Array [
+          0.00010020574173228821,
+        ],
+      ],
+    },
+    "inbound": Array [
+      Input {
+        "gradients": Object {
+          "Ins": Array [
+            Array [
+              -0.000033401727955540676,
+              -0.00005010259193331102,
+            ],
+            Array [
+              -0.00006680401377674754,
+              -0.00010020602066512132,
+            ],
+          ],
+        },
+        "inbound": Array [],
+        "name": "Ins",
+        "outbound": Array [
+          [Circular],
+        ],
+        "value": Array [
+          Array [
+            -1,
+            -2,
+          ],
+          Array [
+            -1,
+            -2,
+          ],
+        ],
+      },
+      Input {
+        "gradients": Object {
+          "Weights": Array [
+            Array [
+              0.00005010287086614411,
+            ],
+            Array [
+              0.00010020574173228821,
+            ],
+          ],
+        },
+        "inbound": Array [],
+        "name": "Weights",
+        "outbound": Array [
+          [Circular],
+        ],
+        "value": Array [
+          Array [
+            2,
+          ],
+          Array [
+            3,
+          ],
+        ],
+      },
+      Input {
+        "gradients": Object {
+          "Bias": Array [
+            -0.00005010287086614411,
+          ],
+        },
+        "inbound": Array [],
+        "name": "Bias",
+        "outbound": Array [
+          [Circular],
+        ],
+        "value": Array [
+          -3,
+        ],
+      },
+    ],
+    "name": "Linear",
+    "outbound": Array [
+      Sigmoid {
+        "gradients": Object {
+          "Linear": Array [
+            Array [
+              -0.000016700863977770338,
+            ],
+            Array [
+              -0.00003340200688837377,
+            ],
+          ],
+        },
+        "inbound": Array [
+          [Circular],
+        ],
+        "name": "Sigmoid",
+        "outbound": Array [
+          MSE {
+            "diff": Array [
+              Array [
+                -0.9999832985781519,
+              ],
+              Array [
+                -1.9999832985781518,
+              ],
+            ],
+            "gradients": Object {
+              "Sigmoid": Array [
+                Array [
+                  -0.9999832985781519,
+                ],
+                Array [
+                  -1.9999832985781518,
+                ],
+              ],
+              "Training": Array [
+                Array [
+                  0.9999832985781519,
+                ],
+                Array [
+                  1.9999832985781518,
+                ],
+              ],
+            },
+            "inbound": Array [
+              Input {
+                "gradients": Object {
+                  "Training": Array [
+                    Array [
+                      0.9999832985781519,
+                    ],
+                    Array [
+                      1.9999832985781518,
+                    ],
+                  ],
+                },
+                "inbound": Array [],
+                "name": "Training",
+                "outbound": Array [
+                  [Circular],
+                ],
+                "value": Array [
+                  1,
+                  2,
+                ],
+              },
+              [Circular],
+            ],
+            "m": 2,
+            "name": "Cost",
+            "outbound": Array [],
+            "value": 2.4999498960133932,
+          },
+        ],
+        "value": Array [
+          Array [
+            0.00001670142184809518,
+          ],
+          Array [
+            0.00001670142184809518,
+          ],
+        ],
+      },
+    ],
+    "value": Array [
+      Array [
+        -11,
+      ],
+      Array [
+        -11,
+      ],
+    ],
+  },
+  Input {
+    "gradients": Object {
+      "Ins": Array [
+        Array [
+          -0.000033401727955540676,
+          -0.00005010259193331102,
+        ],
+        Array [
+          -0.00006680401377674754,
+          -0.00010020602066512132,
+        ],
+      ],
+    },
+    "inbound": Array [],
+    "name": "Ins",
+    "outbound": Array [
+      Linear {
+        "gradients": Object {
+          "Bias": Array [
+            -0.00005010287086614411,
+          ],
+          "Ins": Array [
+            Array [
+              -0.000033401727955540676,
+              -0.00005010259193331102,
+            ],
+            Array [
+              -0.00006680401377674754,
+              -0.00010020602066512132,
+            ],
+          ],
+          "Weights": Array [
+            Array [
+              0.00005010287086614411,
+            ],
+            Array [
+              0.00010020574173228821,
+            ],
+          ],
+        },
+        "inbound": Array [
+          [Circular],
+          Input {
+            "gradients": Object {
+              "Weights": Array [
+                Array [
+                  0.00005010287086614411,
+                ],
+                Array [
+                  0.00010020574173228821,
+                ],
+              ],
+            },
+            "inbound": Array [],
+            "name": "Weights",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              Array [
+                2,
+              ],
+              Array [
+                3,
+              ],
+            ],
+          },
+          Input {
+            "gradients": Object {
+              "Bias": Array [
+                -0.00005010287086614411,
+              ],
+            },
+            "inbound": Array [],
+            "name": "Bias",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              -3,
+            ],
+          },
+        ],
+        "name": "Linear",
+        "outbound": Array [
+          Sigmoid {
+            "gradients": Object {
+              "Linear": Array [
+                Array [
+                  -0.000016700863977770338,
+                ],
+                Array [
+                  -0.00003340200688837377,
+                ],
+              ],
+            },
+            "inbound": Array [
+              [Circular],
+            ],
+            "name": "Sigmoid",
+            "outbound": Array [
+              MSE {
+                "diff": Array [
+                  Array [
+                    -0.9999832985781519,
+                  ],
+                  Array [
+                    -1.9999832985781518,
+                  ],
+                ],
+                "gradients": Object {
+                  "Sigmoid": Array [
+                    Array [
+                      -0.9999832985781519,
+                    ],
+                    Array [
+                      -1.9999832985781518,
+                    ],
+                  ],
+                  "Training": Array [
+                    Array [
+                      0.9999832985781519,
+                    ],
+                    Array [
+                      1.9999832985781518,
+                    ],
+                  ],
+                },
+                "inbound": Array [
+                  Input {
+                    "gradients": Object {
+                      "Training": Array [
+                        Array [
+                          0.9999832985781519,
+                        ],
+                        Array [
+                          1.9999832985781518,
+                        ],
+                      ],
+                    },
+                    "inbound": Array [],
+                    "name": "Training",
+                    "outbound": Array [
+                      [Circular],
+                    ],
+                    "value": Array [
+                      1,
+                      2,
+                    ],
+                  },
+                  [Circular],
+                ],
+                "m": 2,
+                "name": "Cost",
+                "outbound": Array [],
+                "value": 2.4999498960133932,
+              },
+            ],
+            "value": Array [
+              Array [
+                0.00001670142184809518,
+              ],
+              Array [
+                0.00001670142184809518,
+              ],
+            ],
+          },
+        ],
+        "value": Array [
+          Array [
+            -11,
+          ],
+          Array [
+            -11,
+          ],
+        ],
+      },
+    ],
+    "value": Array [
+      Array [
+        -1,
+        -2,
+      ],
+      Array [
+        -1,
+        -2,
+      ],
+    ],
+  },
+  Input {
+    "gradients": Object {
+      "Weights": Array [
+        Array [
+          0.00005010287086614411,
+        ],
+        Array [
+          0.00010020574173228821,
+        ],
+      ],
+    },
+    "inbound": Array [],
+    "name": "Weights",
+    "outbound": Array [
+      Linear {
+        "gradients": Object {
+          "Bias": Array [
+            -0.00005010287086614411,
+          ],
+          "Ins": Array [
+            Array [
+              -0.000033401727955540676,
+              -0.00005010259193331102,
+            ],
+            Array [
+              -0.00006680401377674754,
+              -0.00010020602066512132,
+            ],
+          ],
+          "Weights": Array [
+            Array [
+              0.00005010287086614411,
+            ],
+            Array [
+              0.00010020574173228821,
+            ],
+          ],
+        },
+        "inbound": Array [
+          Input {
+            "gradients": Object {
+              "Ins": Array [
+                Array [
+                  -0.000033401727955540676,
+                  -0.00005010259193331102,
+                ],
+                Array [
+                  -0.00006680401377674754,
+                  -0.00010020602066512132,
+                ],
+              ],
+            },
+            "inbound": Array [],
+            "name": "Ins",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              Array [
+                -1,
+                -2,
+              ],
+              Array [
+                -1,
+                -2,
+              ],
+            ],
+          },
+          [Circular],
+          Input {
+            "gradients": Object {
+              "Bias": Array [
+                -0.00005010287086614411,
+              ],
+            },
+            "inbound": Array [],
+            "name": "Bias",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              -3,
+            ],
+          },
+        ],
+        "name": "Linear",
+        "outbound": Array [
+          Sigmoid {
+            "gradients": Object {
+              "Linear": Array [
+                Array [
+                  -0.000016700863977770338,
+                ],
+                Array [
+                  -0.00003340200688837377,
+                ],
+              ],
+            },
+            "inbound": Array [
+              [Circular],
+            ],
+            "name": "Sigmoid",
+            "outbound": Array [
+              MSE {
+                "diff": Array [
+                  Array [
+                    -0.9999832985781519,
+                  ],
+                  Array [
+                    -1.9999832985781518,
+                  ],
+                ],
+                "gradients": Object {
+                  "Sigmoid": Array [
+                    Array [
+                      -0.9999832985781519,
+                    ],
+                    Array [
+                      -1.9999832985781518,
+                    ],
+                  ],
+                  "Training": Array [
+                    Array [
+                      0.9999832985781519,
+                    ],
+                    Array [
+                      1.9999832985781518,
+                    ],
+                  ],
+                },
+                "inbound": Array [
+                  Input {
+                    "gradients": Object {
+                      "Training": Array [
+                        Array [
+                          0.9999832985781519,
+                        ],
+                        Array [
+                          1.9999832985781518,
+                        ],
+                      ],
+                    },
+                    "inbound": Array [],
+                    "name": "Training",
+                    "outbound": Array [
+                      [Circular],
+                    ],
+                    "value": Array [
+                      1,
+                      2,
+                    ],
+                  },
+                  [Circular],
+                ],
+                "m": 2,
+                "name": "Cost",
+                "outbound": Array [],
+                "value": 2.4999498960133932,
+              },
+            ],
+            "value": Array [
+              Array [
+                0.00001670142184809518,
+              ],
+              Array [
+                0.00001670142184809518,
+              ],
+            ],
+          },
+        ],
+        "value": Array [
+          Array [
+            -11,
+          ],
+          Array [
+            -11,
+          ],
+        ],
+      },
+    ],
+    "value": Array [
+      Array [
+        2,
+      ],
+      Array [
+        3,
+      ],
+    ],
+  },
+  Input {
+    "gradients": Object {
+      "Bias": Array [
+        -0.00005010287086614411,
+      ],
+    },
+    "inbound": Array [],
+    "name": "Bias",
+    "outbound": Array [
+      Linear {
+        "gradients": Object {
+          "Bias": Array [
+            -0.00005010287086614411,
+          ],
+          "Ins": Array [
+            Array [
+              -0.000033401727955540676,
+              -0.00005010259193331102,
+            ],
+            Array [
+              -0.00006680401377674754,
+              -0.00010020602066512132,
+            ],
+          ],
+          "Weights": Array [
+            Array [
+              0.00005010287086614411,
+            ],
+            Array [
+              0.00010020574173228821,
+            ],
+          ],
+        },
+        "inbound": Array [
+          Input {
+            "gradients": Object {
+              "Ins": Array [
+                Array [
+                  -0.000033401727955540676,
+                  -0.00005010259193331102,
+                ],
+                Array [
+                  -0.00006680401377674754,
+                  -0.00010020602066512132,
+                ],
+              ],
+            },
+            "inbound": Array [],
+            "name": "Ins",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              Array [
+                -1,
+                -2,
+              ],
+              Array [
+                -1,
+                -2,
+              ],
+            ],
+          },
+          Input {
+            "gradients": Object {
+              "Weights": Array [
+                Array [
+                  0.00005010287086614411,
+                ],
+                Array [
+                  0.00010020574173228821,
+                ],
+              ],
+            },
+            "inbound": Array [],
+            "name": "Weights",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              Array [
+                2,
+              ],
+              Array [
+                3,
+              ],
+            ],
+          },
+          [Circular],
+        ],
+        "name": "Linear",
+        "outbound": Array [
+          Sigmoid {
+            "gradients": Object {
+              "Linear": Array [
+                Array [
+                  -0.000016700863977770338,
+                ],
+                Array [
+                  -0.00003340200688837377,
+                ],
+              ],
+            },
+            "inbound": Array [
+              [Circular],
+            ],
+            "name": "Sigmoid",
+            "outbound": Array [
+              MSE {
+                "diff": Array [
+                  Array [
+                    -0.9999832985781519,
+                  ],
+                  Array [
+                    -1.9999832985781518,
+                  ],
+                ],
+                "gradients": Object {
+                  "Sigmoid": Array [
+                    Array [
+                      -0.9999832985781519,
+                    ],
+                    Array [
+                      -1.9999832985781518,
+                    ],
+                  ],
+                  "Training": Array [
+                    Array [
+                      0.9999832985781519,
+                    ],
+                    Array [
+                      1.9999832985781518,
+                    ],
+                  ],
+                },
+                "inbound": Array [
+                  Input {
+                    "gradients": Object {
+                      "Training": Array [
+                        Array [
+                          0.9999832985781519,
+                        ],
+                        Array [
+                          1.9999832985781518,
+                        ],
+                      ],
+                    },
+                    "inbound": Array [],
+                    "name": "Training",
+                    "outbound": Array [
+                      [Circular],
+                    ],
+                    "value": Array [
+                      1,
+                      2,
+                    ],
+                  },
+                  [Circular],
+                ],
+                "m": 2,
+                "name": "Cost",
+                "outbound": Array [],
+                "value": 2.4999498960133932,
+              },
+            ],
+            "value": Array [
+              Array [
+                0.00001670142184809518,
+              ],
+              Array [
+                0.00001670142184809518,
+              ],
+            ],
+          },
+        ],
+        "value": Array [
+          Array [
+            -11,
+          ],
+          Array [
+            -11,
+          ],
+        ],
+      },
+    ],
+    "value": Array [
+      -3,
+    ],
+  },
+  Input {
+    "gradients": Object {
+      "Training": Array [
+        Array [
+          0.9999832985781519,
+        ],
+        Array [
+          1.9999832985781518,
+        ],
+      ],
+    },
+    "inbound": Array [],
+    "name": "Training",
+    "outbound": Array [
+      MSE {
+        "diff": Array [
+          Array [
+            -0.9999832985781519,
+          ],
+          Array [
+            -1.9999832985781518,
+          ],
+        ],
+        "gradients": Object {
+          "Sigmoid": Array [
+            Array [
+              -0.9999832985781519,
+            ],
+            Array [
+              -1.9999832985781518,
+            ],
+          ],
+          "Training": Array [
+            Array [
+              0.9999832985781519,
+            ],
+            Array [
+              1.9999832985781518,
+            ],
+          ],
+        },
+        "inbound": Array [
+          [Circular],
+          Sigmoid {
+            "gradients": Object {
+              "Linear": Array [
+                Array [
+                  -0.000016700863977770338,
+                ],
+                Array [
+                  -0.00003340200688837377,
+                ],
+              ],
+            },
+            "inbound": Array [
+              Linear {
+                "gradients": Object {
+                  "Bias": Array [
+                    -0.00005010287086614411,
+                  ],
+                  "Ins": Array [
+                    Array [
+                      -0.000033401727955540676,
+                      -0.00005010259193331102,
+                    ],
+                    Array [
+                      -0.00006680401377674754,
+                      -0.00010020602066512132,
+                    ],
+                  ],
+                  "Weights": Array [
+                    Array [
+                      0.00005010287086614411,
+                    ],
+                    Array [
+                      0.00010020574173228821,
+                    ],
+                  ],
+                },
+                "inbound": Array [
+                  Input {
+                    "gradients": Object {
+                      "Ins": Array [
+                        Array [
+                          -0.000033401727955540676,
+                          -0.00005010259193331102,
+                        ],
+                        Array [
+                          -0.00006680401377674754,
+                          -0.00010020602066512132,
+                        ],
+                      ],
+                    },
+                    "inbound": Array [],
+                    "name": "Ins",
+                    "outbound": Array [
+                      [Circular],
+                    ],
+                    "value": Array [
+                      Array [
+                        -1,
+                        -2,
+                      ],
+                      Array [
+                        -1,
+                        -2,
+                      ],
+                    ],
+                  },
+                  Input {
+                    "gradients": Object {
+                      "Weights": Array [
+                        Array [
+                          0.00005010287086614411,
+                        ],
+                        Array [
+                          0.00010020574173228821,
+                        ],
+                      ],
+                    },
+                    "inbound": Array [],
+                    "name": "Weights",
+                    "outbound": Array [
+                      [Circular],
+                    ],
+                    "value": Array [
+                      Array [
+                        2,
+                      ],
+                      Array [
+                        3,
+                      ],
+                    ],
+                  },
+                  Input {
+                    "gradients": Object {
+                      "Bias": Array [
+                        -0.00005010287086614411,
+                      ],
+                    },
+                    "inbound": Array [],
+                    "name": "Bias",
+                    "outbound": Array [
+                      [Circular],
+                    ],
+                    "value": Array [
+                      -3,
+                    ],
+                  },
+                ],
+                "name": "Linear",
+                "outbound": Array [
+                  [Circular],
+                ],
+                "value": Array [
+                  Array [
+                    -11,
+                  ],
+                  Array [
+                    -11,
+                  ],
+                ],
+              },
+            ],
+            "name": "Sigmoid",
+            "outbound": Array [
+              [Circular],
+            ],
+            "value": Array [
+              Array [
+                0.00001670142184809518,
+              ],
+              Array [
+                0.00001670142184809518,
+              ],
+            ],
+          },
+        ],
+        "m": 2,
+        "name": "Cost",
+        "outbound": Array [],
+        "value": 2.4999498960133932,
+      },
+    ],
+    "value": Array [
+      1,
+      2,
+    ],
+  },
+]
+`;
+
+exports[`Random bits performs Linear + Sigmoid fwd pass 1`] = `
+Array [
+  Array [
+    0.00012339457598623172,
+    0.9820137900379085,
+  ],
+  Array [
+    0.00012339457598623172,
+    0.9820137900379085,
+  ],
+]
+`;
